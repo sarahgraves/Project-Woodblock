@@ -1,0 +1,561 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #f5f5f5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  font: 28px/28px 'ScoutRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #cd2129;
+  margin-bottom: .75em;
+}
+h2 {
+  font: 26px/26px 'ScoutLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222222;
+  margin-bottom: .5em;
+}
+h3 {
+  font: 18px/20px 'ScoutBold', Helvetica, Arial, sans-serif;
+  color: #222222;
+  margin: 2em 0 1em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+h4 {
+  font: 18px/20px 'ScoutBold', Helvetica, Arial, sans-serif;
+  color: #222222;
+  margin: 2em 0 .25em;
+}
+h5 {
+  font: 16px 'ScoutLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #222222;
+  background: #eeeeee;
+  padding: 5px;
+}
+p {
+  margin-bottom: .75em;
+}
+a {
+  color: #00b0f1;
+  text-decoration: none;
+}
+a:hover {
+  color: #0088be;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  transition: all linear 0.1s;
+}
+.wrap {
+  color: #3c3c3c;
+  font: 12px/19px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 940px;
+  margin: 0 auto;
+}
+header.mast {
+  color: #fff;
+  width: 100%;
+  margin: 0 .5em 2em;
+  float: left;
+}
+header.mast nav {
+  width: 100%;
+  margin: 0 5px;
+  float: left;
+  border-bottom: 1px solid #cd2129;
+}
+header.mast nav h1 {
+  text-indent: -9999px;
+  background: url(../img/logo_ihr.png) no-repeat;
+  width: 185px;
+  height: 26px;
+  margin: 14px 0 10px 2px;
+  float: left;
+}
+header.mast nav h1 a {
+  height: 34px;
+  display: block;
+}
+header.mast nav ul {
+  margin: 19px 0 0 53px;
+  float: left;
+}
+header.mast nav ul li {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  margin-right: 2em;
+  float: left;
+  display: inline;
+}
+header.mast nav ul li a {
+  color: #222222;
+}
+header.mast nav ul li a:hover,
+header.mast nav ul li a.on {
+  color: #cd2129;
+}
+header.mast .subNav {
+  width: 100%;
+  height: 40px;
+  margin-left: 5px;
+  float: left;
+  clear: both;
+  border-bottom: 1px solid #eeeeee;
+}
+header.mast .subNav li {
+  font: 12px/40px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  margin-right: 2em;
+  float: left;
+  display: inline;
+}
+header.mast .subNav li a {
+  color: #222222;
+}
+header.mast .subNav li a:hover,
+header.mast .subNav li a.on {
+  color: #cd2129;
+}
+.stickiness {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+.sidebar.sticky {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+  margin: 0;
+  position: fixed;
+  top: 30px;
+}
+.sidebar .contentsNav {
+  font: 12px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.sidebar .contentsNav li .contentsHd {
+  background: #ececec url(../img/carrot_down.png) right no-repeat;
+  position: relative;
+  margin-bottom: 1px;
+  padding: 5px 30px 5px 5px;
+}
+.sidebar .contentsNav li .contentsHd a {
+  color: #555;
+}
+.sidebar .contentsNav li a {
+  color: #777;
+  text-decoration: none;
+  display: block;
+}
+.sidebar .contentsNav li a:hover {
+  color: #09c;
+}
+.sidebar .contentsNav li li {
+  background: #f5f4f4;
+  width: 210px;
+  padding: 5px;
+}
+.sidebar .contentsNav li li a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.main {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  margin-bottom: 2em;
+}
+.main header {
+  height: 300px;
+}
+.main header img {
+  float: left;
+  margin-right: 1em;
+}
+.main header hgroup {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  margin: 0;
+}
+.main ul.bullets {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  list-style: disc outside;
+  margin: 0 0 5px 18px;
+}
+.main ul.bullets li {
+  margin-bottom: 10px;
+}
+.main .col {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  margin: 0 0 2em 0;
+}
+.main .col.gutter {
+  margin-right: 1em;
+}
+.main aside {
+  display: inline;
+  float: left;
+  width: 140px;
+  margin: 0 10px;
+  margin-bottom: 1em;
+  float: right;
+  border: 1px solid #eeeeee;
+}
+.main aside h5 {
+  margin: 5px 5px 0;
+}
+.main aside ul,
+.main aside p {
+  margin: 10px;
+}
+.readmore {
+  font: 12px 'ScoutRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+pre {
+  margin: 0 0 2em 0;
+  padding: 1em;
+  overflow: auto;
+  border: solid 1px #eeeeee;
+  background: #F7F7F7;
+}
+pre,
+code {
+  color: #060;
+  font: 14px/1.5 'courier new', courier, monospace;
+}
+pre .str,
+code .str {
+  color: #080;
+}
+pre .pun,
+code .pun {
+  color: #660;
+}
+pre .pln,
+code .pln {
+  color: #000;
+}
+pre .atn,
+code .atn {
+  color: #828;
+}
+pre .tag,
+code .tag {
+  color: #008;
+}
+.callout {
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 1em solid #eeeeee;
+}
+.callout.highlight {
+  border-left: 1em solid #00b0f1;
+}
+.callout.note {
+  border-left: 1em solid #a5a5a5;
+}
+@media screen and (max-width: 900px) {
+  .wrap {
+    width: 100%;
+  }
+  header.mast nav h1 {
+    margin-bottom: 0;
+  }
+  header.mast nav ul {
+    margin: 1em 0;
+    clear: both;
+  }
+  .main {
+    width: auto;
+    margin: 0 1em 1em 215px;
+    float: none;
+    display: block;
+  }
+  .main header {
+    text-align: center;
+    height: auto;
+    margin-bottom: 2em;
+  }
+  .main header hgroup {
+    width: 100%;
+    text-align: left;
+    loat: none;
+  }
+  .main header img {
+    float: none;
+    margin: 0 auto;
+  }
+  .main ul.bullets {
+    width: auto;
+  }
+  .main .col {
+    width: 100%;
+    margin: 0;
+  }
+  .main .col .gutter {
+    margin: 0;
+  }
+  .stickiness {
+    width: 190px;
+  }
+  .stickiness .sidebar {
+    width: 190px;
+  }
+  .stickiness .sidebar .contentsNav li li {
+    width: auto;
+  }
+}
+@media screen and (max-width: 555px) {
+  .wrap {
+    width: 100%;
+  }
+  .main {
+    margin: 0 1em 1em;
+  }
+  .stickiness {
+    width: 100%;
+    margin: 0 0  1em;
+  }
+  header.mast {
+    text-align: center;
+    margin-bottom: 1em;
+    float: left;
+  }
+  header.mast nav {
+    margin: 0 auto .5em;
+  }
+  header.mast nav h1 {
+    float: none;
+    margin: .5em auto;
+  }
+  header.mast nav ul {
+    width: 418px;
+    margin: 0 auto;
+    float: none;
+  }
+  header.mast nav ul li {
+    font-size: 13px;
+    line-height: 18px;
+    height: auto;
+    margin-right: 1em;
+  }
+  header.mast nav ul li a {
+    padding: 0 .5em;
+  }
+  header.mast .subNav {
+    height: auto;
+    border: 0;
+    text-align: left;
+  }
+  header.mast .subNav li {
+    font-size: 12px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .stickiness {
+    width: 94%;
+    margin: 0 0 2em 1em;
+  }
+  .stickiness .sidebar {
+    width: auto;
+    margin: 0;
+  }
+  .stickiness .sidebar.sticky {
+    width: 100%;
+    position: static;
+    top: auto;
+  }
+  .stickiness .sidebar .contentsNav li .contentsHd span {
+    display: none;
+  }
+  .stickiness .sidebar .contentsNav li li {
+    width: auto;
+  }
+}
+@font-face {
+  font-family: 'ScoutBold';
+  src: url('type/scout-bold-webfont.eot');
+  src: url('type/scout-bold-webfont.eot?#iefix') format('embedded-opentype'), url('type/scout-bold-webfont.woff') format('woff'), url('type/scout-bold-webfont.ttf') format('truetype'), url('type/scout-bold-webfont.svg#ScoutBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ScoutRegular';
+  src: url('type/scout-regular-webfont.eot');
+  src: url('type/scout-regular-webfont.eot?#iefix') format('embedded-opentype'), url('type/scout-regular-webfont.woff') format('woff'), url('type/scout-regular-webfont.ttf') format('truetype'), url('type/scout-regular-webfont.svg#ScoutRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ScoutLight';
+  src: url('type/scout-light-webfont.eot');
+  src: url('type/scout-light-webfont.eot?#iefix') format('embedded-opentype'), url('type/scout-light-webfont.woff') format('woff'), url('type/scout-light-webfont.ttf') format('truetype'), url('type/scout-light-webfont.svg#ScoutLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ScoutCondRegular';
+  src: url('type/scoutcond-regular-webfont.eot');
+  src: url('type/scoutcond-regular-webfont.eot?#iefix') format('embedded-opentype'), url('type/scoutcond-regular-webfont.woff') format('woff'), url('type/scoutcond-regular-webfont.ttf') format('truetype'), url('type/scoutcond-regular-webfont.svg#ScoutRegularItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ScoutExtraLight';
+  src: url('type/scout-extralight-webfont.eot');
+  src: url('type/scout-extralight-webfont.eot?#iefix') format('embedded-opentype'), url('type/scout-extralight-webfont.woff') format('woff'), url('type/scout-extralight-webfont.ttf') format('truetype'), url('type/scout-extralight-webfont.svg#ScoutExtraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clear {
+  clear: both !important;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
