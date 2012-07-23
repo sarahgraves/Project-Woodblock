@@ -122,8 +122,9 @@ a {
     }
 }
 
+b { font-weight: bold; }
 
-
+em { font-style: italic;}
 
 ////////////
 // LAYOUT //
@@ -223,7 +224,7 @@ header.mast {
 
         li {
             .contentsHd {
-                background: #ececec url(../img/carrot_down.png) right no-repeat;
+                background: #e0e0e0 url(../img/carrot_down.png) right no-repeat;
                 position: relative;
                 margin-bottom: 1px;
                 padding:5px 30px 5px 5px;
@@ -243,6 +244,7 @@ header.mast {
                 background: #f5f4f4;
                 width:210px;
                 padding:5px;
+                border-bottom: 1px solid #F3F3F3;
 
                 a { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  }
             }
@@ -257,7 +259,7 @@ header.mast {
     margin-bottom:2em;
 
     header {
-        height: 300px;
+        height: 220px;
 
         img {  float: left; margin-right:1em; }
 
@@ -293,6 +295,15 @@ header.mast {
 
         ul, p { margin:10px; }
     }
+
+    dt {
+        margin:0 2em 2em 0;
+        float:left;
+        clear:left;
+        display:inline;
+    }
+
+    dd { margin:0 0 2em 0; }
 
 }
 
@@ -332,10 +343,10 @@ pre, code {
 .callout {
     margin:1em 0;
     padding:1em;
-    border-left: 1em solid @ltGrey;
+    border-left: 1em solid @grey;
 
     &.highlight { border-left: 1em solid @blue; }
-    &.note { border-left: 1em solid @grey; }
+    &.important { border-left: 1em solid @red; }
 }
 
 
@@ -442,7 +453,7 @@ pre, code {
 ////////////
 
 @text: #3c3c3c;
-@ltGrey: #eee;
+@ltGrey: #ddd;
 @grey: #a5a5a5;
 @dkGrey: #222222;
 @blue: #00b0f1;

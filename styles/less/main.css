@@ -178,6 +178,9 @@ a:hover {
   -moz-transition: all linear 0.1s;
   transition: all linear 0.1s;
 }
+b {
+  font-weight: bold !important;
+}
 .wrap {
   color: #3c3c3c;
   font: 12px/19px "Helvetica Neue", Helvetica, Arial, sans-serif;

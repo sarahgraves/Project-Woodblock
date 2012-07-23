@@ -114,6 +114,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: #f5f5f5;
 }
 ol,
 ul {
@@ -149,7 +150,7 @@ h3 {
   color: #222222;
   margin: 2em 0 1em;
   padding-bottom: 5px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
 }
 h4 {
   font: 18px/20px 'ScoutBold', Helvetica, Arial, sans-serif;
@@ -161,7 +162,7 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #222222;
-  background: #eeeeee;
+  background: #dddddd;
   padding: 5px;
 }
 p {
@@ -176,6 +177,12 @@ a:hover {
   -webkit-transition: all linear 0.1s;
   -moz-transition: all linear 0.1s;
   transition: all linear 0.1s;
+}
+b {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
 }
 .wrap {
   color: #3c3c3c;
@@ -231,7 +238,7 @@ header.mast .subNav {
   margin-left: 5px;
   float: left;
   clear: both;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
 }
 header.mast .subNav li {
   font: 12px/40px 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -266,7 +273,7 @@ header.mast .subNav li a.on {
   font: 12px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .sidebar .contentsNav li .contentsHd {
-  background: #ececec url(../img/carrot_down.png) right no-repeat;
+  background: #e0e0e0 url(../img/carrot_down.png) right no-repeat;
   position: relative;
   margin-bottom: 1px;
   padding: 5px 30px 5px 5px;
@@ -286,6 +293,7 @@ header.mast .subNav li a.on {
   background: #f5f4f4;
   width: 210px;
   padding: 5px;
+  border-bottom: 1px solid #F3F3F3;
 }
 .sidebar .contentsNav li li a {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -298,7 +306,7 @@ header.mast .subNav li a.on {
   margin-bottom: 2em;
 }
 .main header {
-  height: 300px;
+  height: 220px;
 }
 .main header img {
   float: left;
@@ -339,7 +347,7 @@ header.mast .subNav li a.on {
   margin: 0 10px;
   margin-bottom: 1em;
   float: right;
-  border: 1px solid #eeeeee;
+  border: 1px solid #dddddd;
 }
 .main aside h5 {
   margin: 5px 5px 0;
@@ -347,6 +355,15 @@ header.mast .subNav li a.on {
 .main aside ul,
 .main aside p {
   margin: 10px;
+}
+.main dt {
+  margin: 0 2em 2em 0;
+  float: left;
+  clear: left;
+  display: inline;
+}
+.main dd {
+  margin: 0 0 2em 0;
 }
 .readmore {
   font: 12px 'ScoutRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -356,7 +373,7 @@ pre {
   margin: 0 0 2em 0;
   padding: 1em;
   overflow: auto;
-  border: solid 1px #eeeeee;
+  border: solid 1px #dddddd;
   background: #F7F7F7;
 }
 pre,
@@ -387,13 +404,13 @@ code .tag {
 .callout {
   margin: 1em 0;
   padding: 1em;
-  border-left: 1em solid #eeeeee;
+  border-left: 1em solid #a5a5a5;
 }
 .callout.highlight {
   border-left: 1em solid #00b0f1;
 }
-.callout.note {
-  border-left: 1em solid #a5a5a5;
+.callout.important {
+  border-left: 1em solid #cd2129;
 }
 @media screen and (max-width: 900px) {
   .wrap {
