@@ -363,7 +363,9 @@ header.mast .subNav li a.on {
   display: inline;
 }
 .main dd {
+  min-height: 40px;
   margin: 0 0 2em 0;
+  padding-top: .75em;
 }
 .readmore {
   font: 12px 'ScoutRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
