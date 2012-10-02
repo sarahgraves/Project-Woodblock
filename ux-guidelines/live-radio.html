@@ -10,16 +10,16 @@
     <title>iHeartRadio Developer Site :: User Experience Guidelines</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" type="text/less" media="screen" />
+    <link rel="stylesheet" href="../styles/main.css" type="text/less" media="screen" />
 
     <!-- Scripts -->
 
-    <script src="js/less-1.1.3.min.js" type="text/javascript"></script>
+    <script src="../js/less-1.1.3.min.js" type="text/javascript"></script>
     <!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
-    <script type="text/javascript" src="js/waypoints.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/waypoints.js"></script>
 
 
 </head>
@@ -152,12 +152,64 @@
         <!-- Article Header -->
         <header>
             <hgroup>
-                <h1 itemprop="name">User Experience Guidelines</h1>
-                <p itemprop="description">The iHeartRadio experience can be implemented across a wide variety of platforms and form factors. These User Experience Guidelines will help you to ensure that the experience you are creating for your app are as consistent with the iHeartRadio brand.</p>
+                <h1>Live Radio</h1>
+                	<p itemprop="description">The Live Radio screen</p>
             </hgroup>
-            <img src="img/fpo_value.png">
+            <p>The Live Radio section is a browsable catalog of all 1,500+ terrestrial radio streams that are available on iHeartRadio. Live Radio stations should be browsable by genre (also called format) and location with an emphasis on stations that are geographically near the user.</p>
+           
         </header>
-
+		
+		<section>
+		
+			<h2>Popular</h2>
+				<p>Highly popular stations can be featured in this section.</p>
+			
+			<h2>By Location</h2>
+					<p>Stations that are near the user's geographic location should be highlighted in their own subsection. Stations should also be browseable by State and City. All station listings should be sorted according to CUME. This order will be provided by the iHeartRadio servers.</p>
+					<p>State sections may contain a list of cities or a list of all stations in that state. If using a station list within a state section, please exclude any National Digital Stations.</p>
+					<p>City sections should display National Digital stations in a seperate subsection at the end of the list of stations.</p>
+					<p>Station listings should contain the following information:
+						<ul class="bullets">
+							<li>Station Logo</li>
+							<li>Station Name</li>
+							<li>Station Positioner (also called Descriptor)</li>
+							<li>Station Genre (also called Format)</li>
+							<li>Station Location - this should be in the form of [city], [2 letter state]</li>
+						</ul>
+					</p>
+					<p>On platforms with limited display sizes Station listings are required to have the following
+						<ul class="bullets">
+							<li>Station Logo</li>
+							<li>Station Name</li>
+							<li>Station Genre (this is specifically for station listings within Stations by Location)</li>
+						</ul>
+					</p>
+					<h5>Two Ways to Structure Stations by location</h5>
+					<p><img src="../img/byLocationStructure.png" alt="" /></p>
+					
+			
+				<h2>By Genre</h2>
+					<p>Where appropriate, station genres should be divided into "super-genres". These include Talk Radio, and Music &amp; Entertainment.</p>
+					<p>Station listings should contain the following information:
+						<ul class="bullets">
+							<li>Station Logo</li>
+							<li>Station Name</li>
+							<li>Station Positioner (also called Descriptor)</li>
+							<li>Station Genre (also called Format)</li>
+							<li>Station Location - this should be in the form of [city], [2 letter state]</li>
+						</ul>
+					</p>
+					<p>On platforms with limited display sizes Station listings are required to have the following
+						<ul class="bullets">
+							<li>Station Logo</li>
+							<li>Station Name</li>
+							<li>Station Location (this is specifically for station listings within Stations by Genre)</li>
+					</p>
+					<p><img src="../img/byGenresStructure.png" alt="" /></p>
+			
+							
+		
+		</section>
 
     </article>
 
